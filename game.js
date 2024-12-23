@@ -10,18 +10,18 @@ const colors = ['#FF5733', '#33FF57', '#3357FF', '#FFFF33', '#FF33FF'];
 
 const shapes = [
   [
-    [[1, 1], [1, 1]], // O shape
+    [[1, 1], [1, 1]],
   ],
   [
-    [[1, 1, 0], [0, 1, 1]], // Z shape
-    [[0, 1], [1, 1], [1, 0]], // S shape
+    [[1, 1, 0], [0, 1, 1]], 
+    [[0, 1], [1, 1], [1, 0]], 
   ],
   [
-    [[1, 0, 0], [1, 1, 1]], // T shape
+    [[1, 0, 0], [1, 1, 1]], 
   ],
   [
-    [[1, 1, 1], [0, 0, 1]], // L shape
-    [[1, 0], [1, 0], [1, 1]], // J shape
+    [[1, 1, 1], [0, 0, 1]], 
+    [[1, 0], [1, 0], [1, 1]], 
   ],
 ];
 
@@ -76,11 +76,10 @@ function placeShape() {
         const x = currentX + col;
         const y = currentY + row;
         if (y < 0) {
-          clearInterval(gameInterval); // Game Over
+          clearInterval(gameInterval); 
           alert('Game Over!');
           return;
         }
-        // Place the shape on the board
       }
     }
   }
